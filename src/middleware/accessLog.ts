@@ -1,8 +1,4 @@
-import {Router} from 'express'
-
-const router = Router()
-
-router.use((req, res, next) => {
+export default function accessLog (req, res, next) {
 	const accessIP = req.ip
 	const userAgent = req.get('User-Agent')
 	const method = req.method
@@ -14,6 +10,4 @@ router.use((req, res, next) => {
 		} IP:${accessIP} User-Agent:${userAgent}`,
 	)
 	next()
-})
-
-export default router
+}
