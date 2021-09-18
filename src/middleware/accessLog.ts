@@ -1,4 +1,4 @@
-export default function accessLog (req, res, next) {
+export default function accessLog(req, res, next) {
 	const accessIP = req.ip
 	const userAgent = req.get('User-Agent')
 	const method = req.method
