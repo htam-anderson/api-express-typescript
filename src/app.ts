@@ -1,5 +1,6 @@
 import express from 'express'
 import accessLog from './middleware/accessLog'
+import exceptionHanler from './middleware/exceptionHanlder'
 
 class App {
 	public app: express.Application
@@ -21,7 +22,7 @@ class App {
 
 	private initializeControllers(controllers) {
 		controllers.forEach((controller) => {
-			this.app.use('/api', accessLog, controller.router)
+			this.app.use('/api', accessLog, controller.router, exceptionHanler)
 		})
 	}
 

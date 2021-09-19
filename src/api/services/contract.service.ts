@@ -1,4 +1,4 @@
-import {MockApiBase} from './bases/mockAPIBase'
+import {MockApiBase} from './bases/mockAPIBase.service'
 
 export class ContractService extends MockApiBase {
 	constructor() {

@@ -1,22 +1,22 @@
 {
-    "compilerOptions": {
-        "sourceMap": true,
-        "target": "es2021",
-        "outDir": "./dist",
-        "baseUrl": "./src",
-        "moduleResolution": "node",
-        "module": "commonjs",
-        "esModuleInterop": true,
-        "paths": {
-            "*": [
-                "node_modules/*"
-            ]
-        }
-    },
-    "include": [
-        "src/**/*.ts"
-    ],
-    "exclude": [
-        "node_modules"
-    ]
+  "compilerOptions": {
+    "sourceMap": true,
+    "target": "es2021",
+    "outDir": "./dist",
+    "baseUrl": "./src",
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "paths": {
+      "*": [
+        "node_modules/*"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

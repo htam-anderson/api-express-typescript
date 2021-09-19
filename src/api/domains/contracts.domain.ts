@@ -1,4 +1,4 @@
-import {ContractService} from '../services/contractService'
+import {ContractService} from '../services/contract.service'
 
 export class ContractDomain {
 	private reqParam: object

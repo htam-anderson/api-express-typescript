@@ -5,9 +5,8 @@
         "*.test.ts",
         "./dist"
     ],
-    "exec": "ts-node .",
+    "exec": "npm run start",
     "events": {
-      "restart": "npm run pretty && npm run prestart && echo '===>>> DONE BUILD'",
       "crash": "kill-port 3000"
     }
 }

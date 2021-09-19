@@ -1,4 +1,6 @@
 import express from 'express'
+import getCurrentLine from 'get-current-line'
+import InternalException from '../../exception/internal.exception'
 
 interface Post {
 	author: string
@@ -31,6 +33,6 @@ export class PostController {
 	}
 
 	private getAllPosts(request: express.Request, response: express.Response) {
-		response.send(this.posts)
+		throw new InternalException('Loi Internal ne', getCurrentLine())
 	}
 }
